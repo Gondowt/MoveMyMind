@@ -1,0 +1,38 @@
+body {
+    background-image:url(../parquet.jpg);
+    overflow-x: hidden;
+}
+
+#wcolor {
+    color: white;
+}
+
+#game {
+    width: 50%;
+}
+
+#current, #current2 {
+    width: 50%;
+    text-align: center;
+}
+
+#list {
+    float: right;
+    width: 25%;
+    margin: 20px;
+    text-align: right;
+}
+
+#al {
+    text-align: center;
+}
+
+.menu_jeux {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.btn{
+    margin-top: 10px;
+    font-size: 25px;
+}

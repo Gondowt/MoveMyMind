@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="js/API.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 titre">MoveMyMind</div>
+            <div class="col-md-2 menu_jeux" >
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Games
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#" id="morpion_acces">Morpion</a></li>
+                        <li><a href="#" id="mastermind_acces">Mastermind</a></li>
+                        <li><a href="#" id="calcul_acces">Mental Calcul</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-12 accroche">You want to Play ?</div>
+    </div>
+    <div class="row choix_jeux">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 choix1" id="Morpion">MORPION</div>
+        <div class="col-md-4 choix1" id="Mastermind">MASTERMIND</div>
+        <div class="col-md-2 "></div>
+
+    </div>
+    <div class="row choix_jeux">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 choix1" id="Calcul">MENTAL CALCUL</div>
+        <div class="col-md-4 choix1" id="Memory">MEMORY</div>
+        <div class="col-md-2 "></div>
+    </div>
+</div>
+<script src="js/Sommaire.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    color: black;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+#wcolor {
+    color: white;
+}
+
+#plateau td{
+    border: 0px;
+    padding: 10px;
+}
+
+#current {
+    width: 50%;
+    text-align: center;
+}
+
+#list {
+    float: right;
+    width: 25%;
+    margin: 20px;
+    text-align: right;
+}
+
+#al {
+    text-align: center;
+}
+
+.btn{
+    margin-top: 10px;
+    font-size: 25px;
+}

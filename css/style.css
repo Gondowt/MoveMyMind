@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('Roboto-Light.ttf') format('truetype');
+}
+
+body{
+    background-image: url(../parquet.jpg);
+    font-size: 20px;
+    text-align: center;
+    font-family: Roboto-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    opacity: 0.75;
+    margin-top: 100px;
+}
+
+.loginAndSubscribe{
+    margin-top: 100px;
+    font-size: 20px;
+    height : 400px;
+
+}
+#caseRegister{
+    padding-top: 55px;
+    border-right: solid 1px #888;
+    height : 400px;
+    background-color: white ;
+    border-radius : 20px 0px 0px 20px;
+}
+#caseLogin{
+    padding-top: 55px;
+    border-left: solid 1px black;
+    height : 400px;
+    background-color:   white;
+    border-radius : 0px 20px 20px 0px;
+}
+
+.formu{
+    margin-top: 25px;
+    font-family: Roboto-Light,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.titre{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.param {
+    margin-top: 50px;
+}
+
+#formulaire{
+    background-color: white;
+    padding-bottom: 35px;
+    padding-top: 45px;
+    border-radius : 0px 0px 20px 20px;
+}
+
+#navbar-header{
+    background-color: black;
+}
+
+#image_morpion {
+    width:100px;
+    height:100px;
+}
+
+#StartGame {
+    font-size: 30px;
+}
+
+#calcul {
+    margin-top: 100px;
+    font-size: 50px;
+    color:black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#score_calcul {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    text-align: right;
+}
+
+.infoCalcul {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+#classement {
+    margin-top: 40px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.menu_jeux {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.choix1, .accroche {
+    margin-top: 40px;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.choix1:hover {
+    margin-top: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}

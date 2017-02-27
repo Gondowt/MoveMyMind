@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/morpion.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/js/bootstrap.min.js">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/API.js"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 titre">MoveMyMind</div>
+            <div class="col-md-2 menu_jeux" >
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Games
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a id="memory_acces">Memory</a></li>
+                        <li><a id="mastermind_acces">Mastermind</a></li>
+                        <li><a id="mental_acces">Mental Calcul</a></li>
+                        <li><a id="logout">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container">
+                <div class="col-md-3 noms_joueurs">
+                    <input type="text" class="form-control" id="player1" placeholder="Player 1 : What's your name?">
+                    <button type="button" class="btn btn-default btn-lg formu" id="valid_player1" value="Sent">OK</button>
+                </div>
+                <div class="col-md-6" id="body_tableau">
+                    <div class="row">
+                        <div class="col-md-4 case1" id="l1c1"></div>
+                        <div class="col-md-4 case1" id="l1c2"></div>
+                        <div class="col-md-4 case1" id="l1c3"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 case1" id="l2c1"></div>
+                        <div class="col-md-4 case1" id="l2c2"></div>
+                        <div class="col-md-4 case1" id="l2c3"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 case1" id="l3c1"></div>
+                        <div class="col-md-4 case1" id="l3c2"></div>
+                        <div class="col-md-4 case1" id="l3c3"></div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 noms_joueurs">
+                    <input type="text" class="form-control" id="player2" placeholder="Player 2 : What's your name?">
+                    <button type="button" class="btn btn-default btn-lg formu" id="valid_player2" value="Sent">OK</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="score1">Score Player1: 0</div>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-4">
+                    <div id="score2">Score Player2: 0</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-2 symboles">O</div>
+                <div class="col-md-2"id="gagnant"></div>
+                <div class="col-md-4"><button class="btn btn-default" id="nouvelle_partie" type="submit">New Game</button></div>
+                <div class="col-md-2 symboles">X</div>
+                <div class="col-md-1"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/morpion.js"></script>
+
+</body>
+</html>

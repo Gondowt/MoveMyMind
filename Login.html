@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="js/API.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-md-12 titre">MoveMyMind</div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-10 loginAndSubscribe">
+            <div class="row">
+                <div id="caseRegister" class="col-sm-6"><h1>Do you want to join us ?</h1>
+                    <button type="button" class="btn btn-default btn-lg formu" id="More">More</button>
+                </div>
+
+                <div id="caseLogin" class="col-sm-6"><h1>Do you already own an account ?</h1>
+
+                    <div class="row"></div>
+                    <div class="row formu">
+                        <div class="col-sm-4">Login :</div>
+                        <div class="col-sm-4"><input type="login" class="form-control champs" placeholder="Login"></div>
+                    </div>
+                    <div class="row formu">
+                        <div class="col-sm-4">Password :</div>
+                        <div class="col-sm-4"><input type="password" class="form-control champs" placeholder="Password"></div>
+                    </div>
+                    <div class="row formu">
+                        <div class="col-sm-offset-5 col-sm-2">
+                            <button type="button" class="btn btn-default btn-lg" id="login">Login</button>
+                        </div>
+                        <div class="col-sm-5 infoFormu"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="formulaire" class="col-sm-12" style="display:none">Register
+                    <div class="row formu">
+                        <div class="col-sm-4">First Name :</div>
+                        <div class="col-sm-4"><input type="login" class="form-control champs" placeholder="First Name"></div>
+                        <div class="col-sm-4 infoFormu"></div>
+                    </div>
+                    <div class="row formu">
+                        <div class="col-sm-4">Last Name :</div>
+                        <div class="col-sm-4"><input type="login" class="form-control champs" placeholder="Last Name"></div>
+                        <div class="col-sm-4 infoFormu"></div>
+                    </div>
+                    <div class="row formu">
+                        <div class="col-sm-4">Login :</div>
+                        <div class="col-sm-4"><input type="login" class="form-control champs" placeholder="Login"></div>
+                        <div class="col-sm-4 infoFormu"></div>
+                    </div>
+                    <div class="row formu">
+                        <div class="col-sm-4">Password :</div>
+                        <div class="col-sm-4"><input type="password" class="form-control champs" placeholder="Password"></div>
+                        <div class="col-sm-4 infoFormu"></div>
+                    </div>
+                    <div class="row formu">
+                        <div class="col-sm-offset-5 col-sm-2">
+                            <button type="button" class="btn btn-default btn-lg" id="Sent">Sent</button>
+                        </div>
+                        <div class="col-sm-5 infoFormu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/Login.js"></script>
+</body>
+</html>

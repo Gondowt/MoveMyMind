@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mastermind</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/mastermind.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script type="text/javascript" src="js/API.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 titre">MoveMyMind</div>
+            <div class="col-md-2 menu_jeux">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Games
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a id="morpion_acces">Morpion</a></li>
+                        <li><a id="memory_acces">Memory</a></li>
+                        <li><a id="calcul_acces">Mental Calcul</a></li>
+                        <li><a id="logout">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <center>
+        <h1 id="wcolor">Mastermind</h1>
+        <h3 id="wcolor"> Score : <h3 id="score"> </h3></h3>
+
+        <table class="table table-bordered" id="game">
+        </table>
+
+        </br></br>
+        <table class="table table-bordered" id="current">
+            <tr>
+                <td id="zone1" ondrop="drop(event)" ondragover="allowDrop(event)" width="150px" height="37px"></td>
+                <td id="zone2" ondrop="drop(event)" ondragover="allowDrop(event)" width="150px" height="37px"></td>
+                <td id="zone3" ondrop="drop(event)" ondragover="allowDrop(event)" width="150px" height="37px"></td>
+                <td id="zone4" ondrop="drop(event)" ondragover="allowDrop(event)" width="150px" height="37px"></td>
+            </tr>
+        </table>
+        <table class="table table-bordered" id="current2" style="display:none">
+            <tr>
+                <td>Solution</td>
+                <td id="pt1" width="150px" height="37px"></td>
+                <td id="pt2" width="150px" height="37px"></td>
+                <td id="pt3" width="150px" height="37px"></td>
+                <td id="pt4" width="150px" height="37px"></td>
+            </tr>
+        </table>
+        <button type="button" class="btn btn-danger" disabled id="submit" onClick="submit();">Submit</button>
+        <input type="button" value="New Game" class="btn" id="restart" onClick="restart();">
+
+        <div id="infoMastermind"></div>
+        </br></br></br>
+        <img src="trash.png" class="img-responsive" id="trash" width="100px" onclick="cleanElem();"></img>
+    </center>
+
+    <table id="list">
+        <tr>
+            <td id="selectzone">
+                <img src="blue.png" id="blue" data="blue" width="30px" draggable="true" ondragstart="drag(event)"
+                     onClick="getColor(this);"></img>
+                <img src="red.png" id="red" data="red" width="30px" draggable="true" ondragstart="drag(event)"
+                     onClick="getColor(this);"></img>
+                <img src="yellow.png" id="yellow" data="yellow" width="30px" draggable="true" ondragstart="drag(event)"
+                     onClick="getColor(this);"></img>
+                <img src="orange.png" id="orange" data="orange" width="30px" draggable="true" ondragstart="drag(event)"
+                     onClick="getColor(this);"></img>
+                <img src="violet.png" id="violet" data="violet" width="30px" draggable="true" ondragstart="drag(event)"
+                     onClick="getColor(this);"></img>
+                <img src="green.png" id="green" data="green" width="30px" draggable="true" ondragstart="drag(event)"
+                     onClick="getColor(this);"></img>
+            </td>
+        </tr>
+    </table>
+    </br></br></br></br></br></br>
+    <center>
+
+        <div class="row">
+            <div class="row">
+                <div class="row"><input type="button" class="btn" value="Rules" id="rules" onClick="showRules(this)">
+                </div>
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-10" id="divrules" hidden="true">
+                        </br>
+                        <p id="wcolor">
+                            The computer chooses a pattern of four code pegs. Duplicates are allowed, so you could even
+                            choose four code pegs of the same color. A red peg is placed for each code peg from the
+                            guess which is correct in both color and position. A white key peg indicates the existence
+                            of a correct color code peg placed in the wrong position. Try to guess the computer pattern,
+                            in both order and color, within 15 turns.
+                        </p>
+                    </div>
+                </div>
+                <div class="row"><input type="button" class="btn" value="Highscore" id="H" onClick="H();"></div>
+                <div class="row">
+                    <input type="button" value="User Highscore" class="btn" id="HU" style="display: none" onClick="Hu();">
+                    <input type="button" value="General Highscore" class="btn" id="HG" style="display: none" onclick="Hg();">
+                </div>
+            </div>
+            <div class="row" id="classement" style="display: none"></div>
+        </div>
+
+    </center>
+</div>
+</br>
+<script type="text/javascript" src="js/mastermind.js"></script>
+</body>
+</html>

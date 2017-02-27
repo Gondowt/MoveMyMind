@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="js/API.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 titre">MoveMyMind</div>
+            <div class="col-md-2 menu_jeux" >
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Games
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a><div id="morpion_acces">Morpion</div></a></li>
+                        <li><a><div id="mastermind_acces">Mastermind</div></a></li>
+                        <li><a><div id="memory_acces">Memory</div></a></li>
+                        <li><a><div id="logout">Logout</div></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row" id="Game" style="display:none">
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-6" id="calcul">
+                <div class="col-sm-2 termes"></div>
+                <div class="col-sm-2 operateur"></div>
+                <div class="col-sm-2 termes"></div>
+                <div class="col-sm-2 operateur"></div>
+                <div class="col-sm-2 termes"></div>
+                <div class="col-sm-2">=</div>
+            </div>
+        </div>
+        <div class="row param">
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="Answer" placeholder="Answer">
+                    <button type="button" class="btn btn-default btn-lg formu" id="Sent" value="Sent">Sent</button>
+                    <button type="button" class="btn btn-default btn-lg formu" id="Restart" value="Restart">Restart</button>
+                </div>
+                <div class="col-md-5"></div>
+
+            </div>
+            <div class="row param1">
+                <div class="col-md-1"></div>
+                <div class="col-sm-2" id="score_calcul">Score :</div>
+                <div class="col-sm-1 infoCalcul" id="score_calcul"></div>
+                <div class="col-md-2"></div>
+                <div class="col-sm-2" id="score_calcul">Timer :</div>
+                <div class="col-sm-1 infoCalcul" id="score_calcul"></div>
+                <div class="col-md-3 infoCalcul"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row param">
+        <button type="button" class="btn btn-default btn-lg formu" id="StartGame" value="Start Game">Start Game</button>
+    </div>
+    <div class="row">
+        <div class="row">
+            <button type="button" class="btn btn-default btn-lg formu" value="Highscore" id="H">Highscore</button></div>
+        <div class="row">
+            <button type="button" class="btn btn-default btn-lg formu" value="User Highscore" id="HU" style="display: none">User Highscore</button>
+            <button type="button" class="btn btn-default btn-lg formu" value="General Highscore" id="HG" style="display: none">General Highscore</button>
+        </div>
+    </div>
+    <div class="row" id="classement" style="display: none"></div>
+</div>
+</div>
+
+<script src="js/Calcul.js"></script>
+
+</body>
+</html>

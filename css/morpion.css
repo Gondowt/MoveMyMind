@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'crayon';
+    src: url('crayon.ttf') format('truetype');
+}
+
+body{
+    background-image: url(../parquet.jpg);
+    font-size: 20px;
+    text-align: center;
+    font-family: Roboto-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    opacity: 0.75;
+}
+
+.titre{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+#navbar-header{
+    background-color: black;
+}
+
+#body_tableau{
+    margin-top: 100px;
+}
+
+#rubriques {
+    margin-left: 0;
+}
+
+#espace_jeux{
+    margin-top: 30px;
+}
+
+.noms_joueurs{
+    margin-top: 250px;
+}
+
+#gagnant {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+#score1 {
+    font-family: sans-serif;
+    font-size: 30px;
+    opacity: none;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+
+}
+
+#score2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    opacity: none;
+    color: white;
+    font-weight: bold;
+}
+
+#titre_m {
+    font-size: 30px;
+    text-align: center;
+}
+
+#nouvelle_partie {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#se_connecter {
+    font-size: 20px;
+    color:red;
+    text-align: right;
+}
+
+
+.case1 {
+    border:1px dotted black;
+    height: 150px;
+    text-align: center;
+    font-size: 120px;
+    font-family:  crayon, Verdana, "Arial Black", Arial, Impact, sans-serif;
+    opacity: none;
+    background-color: white;
+
+}
+
+.menu_jeux {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.symboles{
+    color:black;
+    font-size: 60px;
+    font-family:  crayon, Verdana, "Arial Black", Arial, Impact, sans-serif;
+    font-weight: bold;
+}
